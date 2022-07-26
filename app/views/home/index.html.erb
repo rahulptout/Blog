@@ -1,0 +1,31 @@
+
+<div class="main_div">
+  <div class="box">
+    <h1>LOGIN PAGE</h1>
+    <%= form_with model: @index do |form| %>
+    <!-- <form action="post"> -->
+      <div class="inputbox">
+
+     <!--    <input type="text" name="username" autocomplete="off" required> -->
+         <%= form.text_field :username %>
+        <%= form.label :username %><br>
+       
+        <!-- <label>username</label> -->
+      </div>
+
+      <div class="inputbox">
+        <%= form.label :password %>
+       <%= form.text_field :password %>
+
+       
+        <!-- <input type="password" name="password" autocomplete="off" required>
+        <label>password</label> -->
+      </div>
+
+      <!-- <input type="submit" name="" value="LOGIN"> -->
+      <%= form.submit %>
+   
+  </div>
+
+</div>
+<% end %>
